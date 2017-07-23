@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abreu.roby.app">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NovaConta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Listar_usuario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cadastro_produto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nova_CategoriaProduto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RealizarVenda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Forma_de_Pagamento"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NovaFeira"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ListarVendaDia" />
+        <activity android:name=".RealizarGasto" />
+        <activity android:name=".Categorias_gasto" />
+        <activity android:name=".Listar_vendas" />
+        <activity android:name=".Listar_gastos"></activity>
+    </application>
+
+</manifest>

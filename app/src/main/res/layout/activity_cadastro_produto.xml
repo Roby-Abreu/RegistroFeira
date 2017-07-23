@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abreu.roby.app.Cadastro_produto"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Produto"
+        android:textSize="25dp"
+        android:textColor="#4799E8"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="75dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_produtoNome"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Produto"
+        android:inputType="textPersonName"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_cat_produto"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp" />
+
+    <Spinner
+        android:id="@+id/spinner_cat_produto"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/editText_qtd_produto"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp" />
+
+    <EditText
+        android:id="@+id/editText_qtd_produto"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Quantidade"
+        android:inputType="number"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/editText_precoProd"
+        app:layout_constraintRight_toRightOf="@+id/spinner_cat_produto"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinner_cat_produto"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/editText_precoProd"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Preço de Produção"
+        android:inputType="numberDecimal"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/editText_precoVenda"
+        app:layout_constraintRight_toRightOf="@+id/editText_qtd_produto"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_qtd_produto" />
+
+    <EditText
+        android:id="@+id/editText_precoVenda"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Preço de Venda"
+        android:inputType="numberDecimal"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button_cadastrarProd"
+        app:layout_constraintRight_toRightOf="@+id/editText_precoProd"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_precoProd"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_cadastrarProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:background="@drawable/button_style"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/editText_precoVenda"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText_precoVenda" />
+</android.support.constraint.ConstraintLayout>
